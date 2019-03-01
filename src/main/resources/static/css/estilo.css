@@ -1,0 +1,163 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
+:root {
+	
+}
+
+.degradado {
+	background-color: white;
+ 	background-image: linear-gradient(to bottom right, #244395, #4394cc);
+ 	color: #dd230c;
+}
+
+body {
+	background-color: #fff4e3;
+}
+
+.contenido {
+	margin: auto 5%;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 0.4fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: 	"titulo titulo"
+							"menu 	menu"
+							"info 	extra"
+							"pie 	pie";
+}
+
+.titulo {
+	text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
+	padding: 20px;
+	text-align: center;
+	font-size: 4em;
+	text-transform: uppercase;
+	grid-area: titulo;
+}
+
+.menu {
+	background-color: #274291;
+	min-width: 650px;
+	grid-area: menu;
+}
+
+ul{
+	list-style: none;
+}
+
+.menu ul {
+	padding: 10px;
+  	display: inline-flex;
+  	vertical-align: middle;
+}
+
+a {
+	color: white;
+	font-size: 1.1em;
+	padding: 10px;
+	overflow: visible;
+}
+
+a:hover {
+	background-color: #8f1f1b;
+}
+
+.info {
+	background-color: #a2c5db;
+	padding: 30px; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	grid-area: info;
+}
+
+.articulo {
+	background-color: #e1f1fc;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: auto;
+	width: 500px;
+}
+
+p {
+	text-align: left;
+	padding: 10px 30px;
+}
+
+.plato {
+	margin: 20px;
+	width: 100%;
+	max-width: 400px; 
+	border-radius: 20% 0%;
+}
+
+.celular {
+	margin: 20px;
+	height: 300px;
+}
+
+.entrada {
+	margin: 0px 10px;
+	padding: 5px;
+}
+
+.boton {
+	background-color: #f44336;
+	padding: 5px;
+	border-radius: 4px;
+	font-size: 1.2em;
+}
+
+.extra {
+	background-color: #afc4d2;
+	padding: 30px;
+	grid-area: extra;
+	
+}
+
+.pie {
+	padding: 20px;
+	text-align: center;
+	grid-area: pie;
+}
+
+h1 {
+	margin: auto;
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+.titulo_texto{
+	padding-top: 10px;
+}
+
+.centrar {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.ruleta {
+	background-color: green;
+	padding: 40px;
+	margin: 10px 70px; /* top and bottom  -  right and left */
+}
+
+.digito {
+	border: 3px solid grey;
+	color: white;
+	padding: 20px;
+	margin: 0px 90px;
+	font-size: 1.5em;
+}
+
+.ruleta_img {
+	margin: 20px;
+	width:  360px;
+}

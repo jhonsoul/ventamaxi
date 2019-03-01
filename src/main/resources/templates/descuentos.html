@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>Oferta del día</title>
+	<link rel="stylesheet" th:href="@{/css/estilo.css}" href="../static/css/estilo.css"/>
+</head>
+<body>
+	<div class="contenido">
+		<header class="titulo degradado">
+			Maxi Ofertas
+		</header>
+
+		<nav class="menu centrar">
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/maxiofertas/picoplacacel">Pico y placa de celulares</a></li>
+				<li><a href="/maxiofertas/descuentos">Descuento del dia</a></li>
+				<li><a href="/maxiofertas/ruleta">Ruleta de la suerte</a></li>
+				<li><a href="/maxiofertas/platodia">Plato del dia</a></li>
+			</ul>
+		</nav>
+		<section class="info">
+			<article class="articulo centrar">
+				<br>
+				<h1>Dia Maxi</h1>
+				<br>
+				<h2 th:text="${descuento.oferta}">oferta</h2>	
+				<p th:text="${descuento.productos}">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptatum earum, fugit dolores, vel vitae aut amet exercitationem adipisci repudiandae cupiditate cumque rerum consectetur facere. Debitis illo, totam. Rem, neque.
+				</p>
+				<br>
+			</article>
+		</section>
+		<aside class="extra">
+			<h2>Información del dia</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eaque temporibus ipsum dolor cum ducimus hic sunt, quibusdam cumque debitis iusto et amet deserunt, est. Animi dicta officia inventore et.
+			</p>
+		</aside>
+		<footer class="pie degradado">
+			© Jhon Alexander Buitrago Gonzalez - Ingeniero en Sistemas
+		</footer>
+	</div>
+</body>
+</html>
